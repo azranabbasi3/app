@@ -1,5 +1,4 @@
 const URL = "https://api-production-df3a.up.railway.app/api/user";
-
 export const apiEndPoint = {
   getProfile: `${URL}/getProfile`,
   updateProfile: `${URL}/updateProfile`,
