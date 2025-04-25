@@ -5,7 +5,7 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 import Image from "next/image";
-
+import { apiEndPoint } from "../utils/apiEndPoint";
 const Feed = () => {
   const [profiles, setProfiles] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -34,7 +34,7 @@ const Feed = () => {
         return;
       }
 
-      const url = new URL(`http://localhost:5000/api/user/getAllProfiles`);
+      const url = new URL(`${apiEndPoint.getAllProfiles}`);
       url.searchParams.append('page', pageNum);
       url.searchParams.append('limit', 10);
       if (selectedInterest) {
