@@ -1,4 +1,4 @@
-const URL = "http://localhost:5000/api/user";
+const URL = "https://api-production-df3a.up.railway.app/api/user";
 
 export const apiEndPoint = {
   getProfile: `${URL}/getProfile`,
